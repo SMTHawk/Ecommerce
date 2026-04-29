@@ -1,4 +1,4 @@
-public package com.example.ecommerce;
+package com.example.ecommerce;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -53,6 +53,4 @@ public class SecureStorage {
     public void clearAll() {
         encryptedPrefs.edit().clear().apply();
     }
-} SecureStorage {
-    
 }
