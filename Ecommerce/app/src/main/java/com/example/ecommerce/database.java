@@ -1,3 +1,5 @@
+package com.example.ecommerce;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +38,7 @@ class Product {
     }
 }
 
-public class ProductSeeder {
+class ProductSeeder {
 
     public static List<Product> getSampleProducts() {
         List<Product> products = new ArrayList<>();
