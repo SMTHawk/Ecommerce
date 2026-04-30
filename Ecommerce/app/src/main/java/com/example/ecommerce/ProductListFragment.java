@@ -15,7 +15,7 @@ public class ProductListFragment extends ListFragment {
 
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-    super.onViewCreated(view, saved InstanceState);
+    super.onViewCreated(view, savedInstanceState);
     repository = new ProductRepository();
     displayProducts(repository.getProducts());
   }
