@@ -21,7 +21,7 @@ public class ProductDetailActivity extends AppCompatActivity {
     }
   }
 
-  private void loadProductDetails(int productId) {
+  private void loadProductDetails(int productId, TextView detailsView) {
     Product product = repository.getProductById(productID);
     if (product != null) {
       String info = "Name: " + product.getName() + "\n" + 
