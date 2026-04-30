@@ -1,6 +1,6 @@
 package com.example.ecommerce;
 
-public class JsonWebService {
+public class JsonWebServer {
 
   public String fetchProducts() {
     return "[{"id\":1, \"name\":\"iPhone 14\"}]";
