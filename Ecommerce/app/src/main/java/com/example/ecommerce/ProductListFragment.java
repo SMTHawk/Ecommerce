@@ -32,7 +32,7 @@ public class ProductListFragment extends ListFragment {
   @Override
   public void onListItemClick(@NonNull ListView l, @NonNull View v, int position, long id) {
     Product selectedProduct = (Product) l.getItemAtPosition(position);
-    onProductSelected(selectedProduct.getId());[cite: 2]
+    onProductSelected(selectedProduct.getId());
   }
 
   public void onProductSelected(int productId) {
