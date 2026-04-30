@@ -28,7 +28,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         "Category: " + product.getCategory() + "\n" +
         "Price: $" + product.getPrice() + "\n" +
         "Ships From: " + product.getShipFrom();
-      view.setText(info);
+      detailsView.setText(info);
       setTitle(product.getName());
     }
   }
