@@ -49,15 +49,15 @@ class ProductSeeder {
     public static List<Product> getSampleProducts() {
         List<Product> products = new ArrayList<>();
 
-        products.add(new Product(01, "iPhone 14", "Electronics", 799.99, "USA"));
-        products.add(new Product(02, "Samsung Galaxy S23", "Electronics", 699.99, "South Korea"));
-        products.add(new Product(03, "Nike Running Shoes", "Footwear", 120.00, "Vietnam"));
-        products.add(new Product(04, "Levi's Jeans", "Clothing", 59.99, "Bangladesh"));
-        products.add(new Product(05, "Sony Headphones", "Electronics", 149.99, "Japan"));
-        products.add(new Product(06, "Wooden Dining Table", "Furniture", 499.99, "USA"));
-        products.add(new Product(07, "Instant Pot Cooker", "Home Appliances", 89.99, "China"));
-        products.add(new Product(08, "Dell Laptop", "Electronics", 999.99, "USA"));
-        products.add(new Product(09, "Adidas T-Shirt", "Clothing", 25.00, "Indonesia"));
+        products.add(new Product(1, "iPhone 14", "Electronics", 799.99, "USA"));
+        products.add(new Product(2, "Samsung Galaxy S23", "Electronics", 699.99, "South Korea"));
+        products.add(new Product(3, "Nike Running Shoes", "Footwear", 120.00, "Vietnam"));
+        products.add(new Product(4, "Levi's Jeans", "Clothing", 59.99, "Bangladesh"));
+        products.add(new Product(5, "Sony Headphones", "Electronics", 149.99, "Japan"));
+        products.add(new Product(6, "Wooden Dining Table", "Furniture", 499.99, "USA"));
+        products.add(new Product(7, "Instant Pot Cooker", "Home Appliances", 89.99, "China"));
+        products.add(new Product(8, "Dell Laptop", "Electronics", 999.99, "USA"));
+        products.add(new Product(9, "Adidas T-Shirt", "Clothing", 25.00, "Indonesia"));
         products.add(new Product(10, "Gaming Mouse", "Electronics", 49.99, "China"));
 
         return products;
