@@ -12,7 +12,7 @@ public class ProductRepository {
   public List<Product> getProducts() {
     List<Product> products = cache.getCachedProducts();
     if (products.isEmpty()) {
-      products = ProductSeeder.getSampleProducts();[cite: 2]
+      products = ProductSeeder.getSampleProducts();
       cache.cacheProducts(products);
     }
     return products;
@@ -20,7 +20,7 @@ public class ProductRepository {
 
   public Product getProductbyId(int id) {
     for (Product p : getProducts()) {
-      if (p.getId() == id) return p;[cite: 2]
+      if (p.getId() == id) return p;
     }
     return null;
   }
