@@ -3,18 +3,16 @@ package com.example.ecommerce;
 import java.util.List;
 
 public class ProductRepository {
-  private JsonWebService webService;
   private DataVirtualization cache;
 
   public ProductRepository() {
-    this.webService = new JsonWebService();
     this.cache = new DataVirtualization();
   }
 
   public List<Product> getProducts() {
     List<Product> products = cache.getCachedProducts();
     if (products.isEmpty()) {
-      products = ProductSeeder.getSampleProducts();
+      products = ProductSeeder.getSampleProducts();[cite: 2]
       cache.cacheProducts(products);
     }
     return products;
@@ -22,7 +20,7 @@ public class ProductRepository {
 
   public Product getProductbyId(int id) {
     for (Product p : getProducts()) {
-      if (p.getId() == id) return p;
+      if (p.getId() == id) return p;[cite: 2]
     }
     return null;
   }
