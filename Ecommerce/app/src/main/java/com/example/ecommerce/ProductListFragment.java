@@ -16,11 +16,16 @@ public class ProductListFragment extends ListFragment {
 
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    return super.onCreateView(inflater, container, savedInstanceState);
+  }
+  
+  @Override
+  public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
     repository = new ProductRepository();
     displayProducts(repository.getProducts());
   }
-
+  
   public void displayProducts(List<Product> products) {
     ArrayAdapter<Product> adapter = new ArrayAdapter<>(
       requireContext(),
