@@ -4,16 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Product {
+    private int id;
     private String name;
     private String category;
     private double price;
     private String shipFrom;
 
-    public Product(String name, String category, double price, String shipFrom) {
+    public Product(int id, String name, String category, double price, String shipFrom) {
+        this.id = id;
         this.name = name;
         this.category = category;
         this.price = price;
         this.shipFrom = shipFrom;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -43,16 +49,16 @@ class ProductSeeder {
     public static List<Product> getSampleProducts() {
         List<Product> products = new ArrayList<>();
 
-        products.add(new Product("iPhone 14", "Electronics", 799.99, "USA"));
-        products.add(new Product("Samsung Galaxy S23", "Electronics", 699.99, "South Korea"));
-        products.add(new Product("Nike Running Shoes", "Footwear", 120.00, "Vietnam"));
-        products.add(new Product("Levi's Jeans", "Clothing", 59.99, "Bangladesh"));
-        products.add(new Product("Sony Headphones", "Electronics", 149.99, "Japan"));
-        products.add(new Product("Wooden Dining Table", "Furniture", 499.99, "USA"));
-        products.add(new Product("Instant Pot Cooker", "Home Appliances", 89.99, "China"));
-        products.add(new Product("Dell Laptop", "Electronics", 999.99, "USA"));
-        products.add(new Product("Adidas T-Shirt", "Clothing", 25.00, "Indonesia"));
-        products.add(new Product("Gaming Mouse", "Electronics", 49.99, "China"));
+        products.add(new Product(01, "iPhone 14", "Electronics", 799.99, "USA"));
+        products.add(new Product(02, "Samsung Galaxy S23", "Electronics", 699.99, "South Korea"));
+        products.add(new Product(03, "Nike Running Shoes", "Footwear", 120.00, "Vietnam"));
+        products.add(new Product(04, "Levi's Jeans", "Clothing", 59.99, "Bangladesh"));
+        products.add(new Product(05, "Sony Headphones", "Electronics", 149.99, "Japan"));
+        products.add(new Product(06, "Wooden Dining Table", "Furniture", 499.99, "USA"));
+        products.add(new Product(07, "Instant Pot Cooker", "Home Appliances", 89.99, "China"));
+        products.add(new Product(08, "Dell Laptop", "Electronics", 999.99, "USA"));
+        products.add(new Product(09, "Adidas T-Shirt", "Clothing", 25.00, "Indonesia"));
+        products.add(new Product(10, "Gaming Mouse", "Electronics", 49.99, "China"));
 
         return products;
     }
