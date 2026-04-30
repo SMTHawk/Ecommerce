@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
                 .setReorderingAllowed(true)
                 .add(R.id.fragment_container, ProductListFragment.class, null)
                 .commit();
+        }
     }
 }
