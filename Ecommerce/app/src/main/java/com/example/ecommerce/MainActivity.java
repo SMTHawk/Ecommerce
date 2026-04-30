@@ -13,7 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                .replace(android.R.id.content, new ProductListFragment())
+                .setReorderingAllowed(true)
+                .add(R.id.fragment_container, ProductListFragment.class, null)
                 .commit();
     }
 }
